@@ -1,0 +1,244 @@
+{% extends "mainapp/base.html" %}
+{% load static %}
+
+{% block content %}
+{% include "mainapp/nav.html" %}
+<br><br>
+<div class="hero-wrap hero-bread"
+    style="background-image:linear-gradient(to right, rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('../../../static/img/rect79.png');">
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+            <div class="col-md-9 ftco-animate text-center">
+                <h1 class="mb-0 bread"><span class="text-muted koko"
+                        style="font-weight:400; margin-left:-13px!important;">Take a dive</span></h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="ftco-section ftco-no-pb ftco-no-pt" style="background-color: #fff;">
+    <div class="container">
+        <div class="row">
+
+
+
+            <div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
+                <div class="heading-section-bold mb-5 mt-md-5">
+                    <div class="ml-md-0">
+                    </div>
+                </div>
+                <div class="pb-md-5">
+                    <h3>Random facts about me --- <br><b>the good, the bad, the surprising.</b></h3><br>
+                    <p style="margin-bottom: 0.3rem">I love <b><del>coffee</del></b> tea and I like it black.</p>
+                    <p style="margin-bottom: 0.3rem">I think Ryan Reynolds is awesome.</p>
+                    <p style="margin-bottom: 0.3rem">I am a terrible dancer.</p>
+                    <p style="margin-bottom: 0.3rem">I have a phobia for swings and terrified of camels...
+                        <del><b>after one day landing on my face</b></del></p>
+                    <p style="margin-bottom: 0.3rem">When I was a kid, I always wanted to be a pathologist... until
+                        I saw horror
+                        movies.</p>
+                    <p style="margin-bottom: 0.3rem">Not a huge fan of popcorn.</p>
+                    <p style="margin-bottom: 0.3rem">If I wasn't a developer today, I'd probably be a terrible chef
+                        somewhere.
+                        ("My God!! This food has too much salt!").</p>
+                    <p style="margin-bottom: 0.3rem">I have broken some of my fingers twice.</p>
+                    <p style="margin-bottom: 0.3rem">FPS games are a guilty pleasure.</p>
+                </div>
+            </div>
+
+            <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center">
+                <div><img src="{% static 'img/source.gif' %}" class="img-responsive" style="width:300px;height: auto;">
+                <p class="small text-center">Ryan just being Ryan</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="ftco-section testimony-section" style="background:url('../../../static/img/download.png');">
+    <div class="container">
+        <p class="text-center" style="color:#fff;">I have also received numerous awards on various categories</p>
+        <br>
+        <div class="row justify-content-center">
+            <div class="row ftco-animate">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <center><img src="{% static 'img/award.JPG' %}" class="img-fluid"
+                            style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    </center>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="ftco-section bg-light ftco-services">
+    <div class="container">
+        <div class="row justify-content-center mb-3 pb-3">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+                <h2 style="font-family: 'EB Garamond';">Other things I have indulged in</h2>
+                <br><br><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services">
+                    <div class="icon d-flex justify-content-center align-items-center mb-4">
+                        <p><img src="https://img.icons8.com/color/48/000000/microphone.png"
+                                style="height: 30px; width:auto;">&nbsp;<span
+                                style="font-size:22.5px; vertical-align: middle;">Podcasts</span></p>
+                    </div><br>
+                    <div class="media-body">
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-3 col-6">
+                                <img src="{% static 'img/banon.jpg' %}" class="img-fluid"
+                                    style="height:70px; width:auto;">
+                            </div>
+                            <div class="col-sm-8 col-6">
+                                <p class="text-left"><span style="color:black"><a
+                                            href="https://open.spotify.com/show/1HuiR5EiKgk9rjWJtqeTw2?si=nHLiigOcT3yeJJ9rkLfaDw"><b>Beautiful Anonymous <br>with Chris Gethard</b></a></span></p>
+                            </div>
+
+                        </div><br>
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-3 col-6">
+                                <img src="{% static 'img/waveform.jpeg' %}" class="img-fluid"
+                                    style="height:70px; width:auto;">
+                            </div>
+                            <div class="col-sm-8 col-6">
+                                <p class="text-left"><span style="color:black"><a
+                                            href="https://open.spotify.com/show/6o81QuW22s5m2nfcXWjucc"><b>Waveform:
+                                                The MKBHD Podcast
+                                                <br>with Marques Brownlee</b></a></span></p>
+                            </div>
+
+                        </div><br>
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-3 col-6">
+                                <img src="{% static 'img/darkdiaries.jpg' %}" class="img-fluid"
+                                    style="height:70px; width:auto;">
+                            </div>
+                            <div class="col-sm-8 col-6">
+                                <p class="text-left"><span style="color:black"><a
+                                            href="https://open.spotify.com/show/4XPl3uEEL9hvqMkoZrzbx5?si=rwJNwj94Rg6F0G0KuVD4kQ"><b>The Darknet Diaries<br> with Jack Rhysider</b></a></span></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services">
+                    <div class="icon d-flex justify-content-center align-items-center mb-4">
+                        <p><img src="https://img.icons8.com/color/48/000000/books.png"
+                                style="height: 30px; width:auto;">&nbsp;<span
+                                style="font-size:22.5px; vertical-align: middle;">Books</span></p>
+                    </div><br>
+                    <div class="media-body">
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-3 col-6">
+                                <img src="{% static 'img/phoenixproject.jpg' %}" class="img-fluid"
+                                    style="height:70px; width:auto;">
+                            </div>
+                            <div class="col-sm-8 col-6">
+                                <p class="text-left"><a
+                                        href="https://www.audible.com/pd/The-Phoenix-Project-Audiobook/B00VAZZY32?qid=1582050315&sr=1-1&pf_rd_p=e81b7c27-6880-467a-b5a7-13cef5d729fe&pf_rd_r=30RDDHW1K06KPD8F3SXG&ref=a_search_c3_lProduct_1_1"><b>The
+                                            Phoenix Project <br>by Gene Kim and Kevin Behr</b></a></p>
+                            </div><br>
+
+                        </div><br>
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-3 col-6">
+                                <img src="{% static 'img/htlf.jpg' %}" class="img-fluid"
+                                    style="height:70px; width:auto;">
+                            </div>
+                            <div class="col-sm-8 col-6">
+                                <p class="text-left" style="color: black"><a><b>How to Lose Friends and Alienate
+                                            People by Toby
+                                            Young</b></a></p>
+                            </div><br>
+
+                        </div><br>
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-3 col-6">
+                                <img src="{% static 'img/kane.jpg' %}" class="img-fluid"
+                                    style="height:70px; width:auto;">
+                            </div>
+                            <div class="col-sm-8 col-6">
+                                <p class="text-left" style="color: black"><a><b>The Kane Chronicles by Rick
+                                            Riordan</b></a></p>
+                            </div><br>
+
+                        </div><br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services">
+                    <div class="icon d-flex justify-content-center align-items-center mb-4">
+                        <p><img src="https://img.icons8.com/color/48/000000/youtube-play.png"
+                                style="height: 30px; width:auto;">&nbsp;<span
+                                style="font-size:22.5px; vertical-align: middle;">Channels</span></p>
+                    </div><br>
+                    <div class="media-body">
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-3 col-6">
+                                <img src="{% static 'img/marques.jpg' %}" class="img-fluid"
+                                    style="height:70px; width:auto;">
+                            </div>
+                            <div class="col-sm-8 col-6">
+                                <p class="text-left" style="color: black"><a
+                                        href="https://www.youtube.com/user/marquesbrownlee"><b>Marques
+                                            <br>Brownlee</b></a></p>
+                            </div><br>
+
+                        </div><br>
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-3 col-6">
+                                <img src="{% static 'img/ut.jpg' %}" class="img-fluid" style="height:70px; width:auto;">
+                            </div>
+                            <div class="col-sm-8 col-6">
+                                <p class="text-left" style="color: black"><a
+                                        href="https://www.youtube.com/user/unboxtherapy"><b>Unbox
+                                            <br>Therapy</b></a></p>
+                            </div><br>
+
+                        </div><br>
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-3 col-6">
+                                <img src="{% static 'img/jackfrags.jpg' %}" class="img-fluid"
+                                    style="height:70px; width:auto;">
+                            </div>
+                            <div class="col-sm-8 col-6">
+                                <p class="text-left" style="color: black"><a
+                                        href="https://www.youtube.com/user/jackfrags"><b>Jack
+                                            <br>Frags</b></a></p>
+                            </div><br>
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% include "mainapp/footer.html" %}
+{% endblock content %}

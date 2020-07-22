@@ -1,0 +1,53 @@
+{% include "mainapp/base.html" %}
+{% load static %}
+
+{% block content %}
+{% include "mainapp/nav.html" %}
+<br><br><br>
+<div class="container">
+	<div class="row">
+		<div class="col-md-2"></div>
+    		<!-- Begin Post -->
+		<div class="col-md-8 col-md-offset-2 col-xs-12 blog-main">
+			<div class="mainheading pt-4">
+
+				<h1 class="posttitle">{{post.title}}</h1>
+
+			</div>
+
+			<!-- Begin Featured Image -->
+			<img class="featured-image img-fluid" src="{{post.post_thumbnail.url}}" alt="">
+			<!-- End Featured Image -->
+
+			<!-- Begin Post Content -->
+			<div class="article-post">
+				<p>
+					{{post.body|safe}}
+				</p>
+			</div>
+			<!-- End Post Content -->
+
+			<!-- Begin Tags -->
+			<div class="after-post-tags">
+				<ul class="tags">
+					<li><a href="#">Design</a></li>
+					<li><a href="#">Growth Mindset</a></li>
+					<li><a href="#">Productivity</a></li>
+					<li><a href="#">Personal Growth</a></li>
+				</ul>
+			</div>
+			<!-- End Tags -->
+
+
+		<br>
+		<br>
+		<br>
+		{% include 'mainapp/comments.html' with url=post.slug %}
+		</div>
+	</div><br><br>
+</div>
+
+		<!-- End Post -->
+
+
+{% endblock content %}

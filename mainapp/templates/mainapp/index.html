@@ -1,0 +1,55 @@
+{% extends "mainapp/base.html" %}
+{% load static %}
+
+{% block content %}
+
+{% include "mainapp/nav.html" %}
+
+<div class="hero-wrap js-fullheight"
+    style="background-image: url('../../../static/img/greatlanding.png'); margin-top: -2px;">
+    <div class="center text-center">
+        <div id="headintro">
+            <br><br><br>
+            <h1 class="text-left koko" style="color:transparent!important;">
+                GAMER.</h1>
+            <h1 class="text-left koko">
+                DEVELOPER.
+            </h1>
+            <h1 class="text-left koko">
+                THINKER.</h1>
+            <br><br>
+            <a href="mailto:hello@fredricksimi.com">
+            <div
+                style="width: 180px; height: 50px; padding: 10px 60px; background-color:#faed26; color:#000; border-radius: 100px; border:none; font-size: 14px; font-family:'Lato'; margin-top: -10px; margin-left: 40px; font-weight:200;">
+                <b>Say hello</b></div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" style="padding: 3em 0;">
+    <br><br><br><br>
+    <div class="row">
+
+        <div class="col-sm-8 pb-4" id="headint">
+            <p class="kaka" style="color:black;">I build things that live</p>
+            <p class="kaka" style="color:black;">on the web</p>
+        </div><br><br>
+
+        <div class="col-sm-4" style="padding: 0 40px;">
+            <p style="color:#000;">Hi, my name is <del><b>Frederick</b></del> Fredrick Simi.</p>
+            <p style="color:#000;">I'm a software developer based in Kenya, specializing
+                in building beautiful and intuitive websites and applications.
+            </p>
+            <p style="color:black;">I enjoy building things that live on the internet.
+                I love everything that deals with technology, from simply cropping a photo to something
+                as sophisticated as Machine Learning and Artificial Intelligence.
+            </p>
+        </div>
+
+    </div>
+    <br><br><br><br>
+</div>
+{% include "mainapp/footer.html" %}
+{% endblock content %}

@@ -1,0 +1,52 @@
+{% extends "mainapp/base.html" %}
+{% load static %}
+
+{% block content %}
+{% include "mainapp/nav.html" %}
+<div class="hero-wrap js-fullheight" style="background-image: url('../../../static/img/bokeh.jpg'); margin-top: -2px;background-size:cover;">
+    <div class="center text-center">
+        <div id="headinta">
+            <br><br><br>
+            <h1 class="text-left kuku"
+                style="color:white; font-family:'CircularStdBold'; letter-spacing: 0.015em; margin-left: 40px;">
+                LET'S GET
+            </h1>
+            <h1 class="text-left kuku"
+                style="color:white; font-family:'CircularStdBold'; letter-spacing: 0.015em; margin-left: 40px;">
+                CONNECTED</h1>
+            <h1 class="text-left kuku"
+                style="color:white; font-family:'CircularStdBold'; letter-spacing: 0.015em; margin-left: 40px;">
+                TODAY</h1>
+            <br><br>
+        </div>
+
+
+    </div>
+</div>
+
+<section class="ftco-section" style="background-color: #f5f1f1;padding: 6em 0 3em;">
+    <div class="container">
+        <div class="row justify-content-center mb-3 pb-2">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+                <h2 style="font-family: 'EB Garamond';">General Questions</h2>
+                <br><br>
+                <p class="text-center" style="color:black;">Feel free to reach out to me if you have any questions <br>or comments about the services I offer. <br>Also, you could always just say a quick hi.</p>
+                <br><br>
+                <center><a href="mailto:hello@fredricksimi.com"><div
+                    style="width: 220px; height: 50px; padding: 10px 60px; background-color:#faed26; color:#000; border-radius: 100px; border:none; font-size: 14px; font-family:'Lato'; margin-top: -10px; font-weight:200;box-shadow: 0 9px 12px -6px rgba(0,0,0,.78)">
+                    <b>Let's get talking</b></div></a>
+                </center>
+            </div>
+        </div>
+    </div>
+<br>
+<p class="small text-center" style="color:black;vertical-align: middle;margin: 10px 0px -10px;">
+                    Copyright &copy;&nbsp;
+                    <script>document.write(new Date().getFullYear());</script> &nbsp;|&nbsp; Fredrick Simi
+                    &nbsp;|&nbsp; All rights reserved
+                </p>
+</section>
+
+
+
+{% endblock content %}
